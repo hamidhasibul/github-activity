@@ -21,3 +21,7 @@ Provide the GitHub username as an argument when running the CLI.
 ```bash
   ./github-user-activity <github-username>
 ```
+
+## Project URL
+
+- [roadmap.sh | github user activity](https://roadmap.sh/projects/github-user-activity)
