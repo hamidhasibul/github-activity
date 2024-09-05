@@ -39,13 +39,14 @@ func main() {
 		q = os.Args[1]
 	}
 	res, err := http.Get("https://api.github.com/users/" + q + "/events")
+
 	if err != nil {
 		panic(err)
 	}
 	defer res.Body.Close()
 
 	if res.StatusCode != 200 {
-		panic("Data not available")
+		panic("either user or activities not available")
 	}
 
 	body, err := io.ReadAll(res.Body)
